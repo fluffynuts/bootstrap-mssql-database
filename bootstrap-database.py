@@ -27,16 +27,10 @@ class DatabaseBootstrapper:
         self._create_database()
         self._close_connection()
         self._connect_app_database()
-        self._add_use_database_if_required()
         self._create_app_user()
         self._allow_app_user_connect()
         self._set_app_user_roles()
         self._dump_script_if_required()
-
-    def _add_use_database_if_required(self):
-        # required to GO before attempting to use the new database
-        self._run_script("GO")
-        self._run_script('use [%s]' % self._bootstrap_info.database)
 
     def _dump_script_if_required(self):
         if not self._generate_only:
@@ -46,7 +40,7 @@ class DatabaseBootstrapper:
             for line in self._script:
                 stream.write("%s\n" % line)
         print('Generated script: %s' % script_file)
-        
+
     def _log(self, message):
         if not self._verbose:
             return
@@ -64,6 +58,9 @@ class DatabaseBootstrapper:
 
     def _connect_app_database(self):
         if self._generate_only:
+            # required to GO before attempting to use the new database
+            self._run_script("GO")
+            self._run_script('use [%s]' % self._bootstrap_info.database)
             return
         database_name = self._bootstrap_info.database
         self._connection = self._connect_to_database(database_name)
@@ -174,3 +171,4 @@ def main(host, \
 
 if __name__ == '__main__':
     main()
+
