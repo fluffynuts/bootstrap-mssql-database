@@ -1,0 +1,32 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+BootstrapInfo	K:\OpenSource\bootstrap-mssql-database\bootstrap-database.py	/^BootstrapInfo = namedtuple('BootstrapTuple', 'database user password')$/;"	kind:variable	line:8
+ConnectionInfo	K:\OpenSource\bootstrap-mssql-database\bootstrap-database.py	/^ConnectionInfo = namedtuple('ConnectionInfo', 'server user password')$/;"	kind:variable	line:7
+Constants	K:\OpenSource\bootstrap-mssql-database\bootstrap-database.py	/^Constants = namedtuple('Constants', 'host instance')$/;"	kind:variable	line:9
+DatabaseBootstrapper	K:\OpenSource\bootstrap-mssql-database\bootstrap-database.py	/^class DatabaseBootstrapper:$/;"	kind:class	line:12
+__init__	K:\OpenSource\bootstrap-mssql-database\bootstrap-database.py	/^    def __init__(self, connection_info, bootstrap_info, verbose):$/;"	kind:member	line:13
+_allow_app_user_connect	K:\OpenSource\bootstrap-mssql-database\bootstrap-database.py	/^    def _allow_app_user_connect(self):$/;"	kind:member	line:67
+_close_connection	K:\OpenSource\bootstrap-mssql-database\bootstrap-database.py	/^    def _close_connection(self):$/;"	kind:member	line:36
+_connect_app_database	K:\OpenSource\bootstrap-mssql-database\bootstrap-database.py	/^    def _connect_app_database(self):$/;"	kind:member	line:39
+_connect_master	K:\OpenSource\bootstrap-mssql-database\bootstrap-database.py	/^    def _connect_master(self):$/;"	kind:member	line:33
+_connect_to_database	K:\OpenSource\bootstrap-mssql-database\bootstrap-database.py	/^    def _connect_to_database(self, database):$/;"	kind:member	line:43
+_create_app_user	K:\OpenSource\bootstrap-mssql-database\bootstrap-database.py	/^    def _create_app_user(self):$/;"	kind:member	line:58
+_create_database	K:\OpenSource\bootstrap-mssql-database\bootstrap-database.py	/^    def _create_database(self):$/;"	kind:member	line:77
+_create_login	K:\OpenSource\bootstrap-mssql-database\bootstrap-database.py	/^    def _create_login(self):$/;"	kind:member	line:87
+_enquote	K:\OpenSource\bootstrap-mssql-database\bootstrap-database.py	/^    def _enquote(self, text):$/;"	kind:member	line:55
+_log	K:\OpenSource\bootstrap-mssql-database\bootstrap-database.py	/^    def _log(self, message):$/;"	kind:member	line:28
+_run_script	K:\OpenSource\bootstrap-mssql-database\bootstrap-database.py	/^    def _run_script(self, script):$/;"	kind:member	line:99
+_set_app_user_roles	K:\OpenSource\bootstrap-mssql-database\bootstrap-database.py	/^    def _set_app_user_roles(self):$/;"	kind:member	line:71
+bootstrap-database.py	K:\OpenSource\bootstrap-mssql-database\bootstrap-database.py	1;"	kind:file	line:1
+click	K:\OpenSource\bootstrap-mssql-database\bootstrap-database.py	/^import click$/;"	kind:namespace	line:2
+constants	K:\OpenSource\bootstrap-mssql-database\bootstrap-database.py	/^constants = Constants('localhost', '(default)')$/;"	kind:variable	line:10
+main	K:\OpenSource\bootstrap-mssql-database\bootstrap-database.py	/^        verbose):$/;"	kind:function	line:127
+namedtuple	K:\OpenSource\bootstrap-mssql-database\bootstrap-database.py	/^from collections import namedtuple$/;"	kind:namespace	line:5
+os	K:\OpenSource\bootstrap-mssql-database\bootstrap-database.py	/^import os$/;"	kind:namespace	line:3
+pypyodbc	K:\OpenSource\bootstrap-mssql-database\bootstrap-database.py	/^import pypyodbc$/;"	kind:namespace	line:1
+run	K:\OpenSource\bootstrap-mssql-database\bootstrap-database.py	/^    def run(self):$/;"	kind:member	line:18
+sys	K:\OpenSource\bootstrap-mssql-database\bootstrap-database.py	/^import sys$/;"	kind:namespace	line:4
