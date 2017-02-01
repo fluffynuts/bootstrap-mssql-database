@@ -20,3 +20,9 @@ You will need to install the following libraries (probably with <code>pip</code>
 Run <code>bootstrap-database.py</code> with <code>--help</code> to get commandline parameters. 
 Script may be run with all, part or no parameters set. Any missing parameter values
 are collected via interactive method.
+
+By default, the script runs "live" -- creating the required database, login and user on a localhost
+SQL Server instance. The SQL Server target can be overridden on the commandline.
+
+In addition, running with the <code>--generate</code> commandline switch will dump the script
+instead of running it live so that it can be used later, at a more convenient time.
